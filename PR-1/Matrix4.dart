@@ -18,7 +18,6 @@ void main()
       l1.add(l2);
     }
 
-    do{
       print("Press 1 sum all elements");
       print("Press 2 for sum of specific row");
       print("Press 3 for sum of specific column");
@@ -119,7 +118,6 @@ void main()
           print("");
 
       }
-   }while(a!=0);
 
 
 
