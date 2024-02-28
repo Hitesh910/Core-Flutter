@@ -1,27 +1,27 @@
 import 'dart:io';
 class Time
 {
-    double? h,m,s;
+    int? h,m,s;
 
     void setData()
     {
         print("Enter the second :=");
-        s = double.parse(stdin.readLineSync()!);
+        s = int.parse(stdin.readLineSync()!);
     }         
 
     void ans(int q,double m)
     { 
       m = s!/60;
-      s = s! - ((s!/60)*60);
+      s = s! - ((s!~/60)*60);
   
-       h= m/60;
+       h= m~/60;
       //   double s = s % 3600;
 
-      m = m -  ((m/60)*60);
+      m = m -  ((m~/60)*60);
 
       
-       print("Minutes is := $s");
-        print("Minutes is := $m");
+       print("Minutes is := $m");
+        print("Second is := $s");
        print("Hours is := $h");
 
       
