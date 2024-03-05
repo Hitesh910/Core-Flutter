@@ -5,8 +5,8 @@ int ad({required int CS,required int eng,required int prog,required int Math,req
    
     z=CS + eng + prog + Math + ML;
     print("Total is := $z");
-    per= z%5 ;
-    return per;
+    //per= z%5 ;
+   //return per;
 
 }
 void main()
@@ -31,6 +31,7 @@ void main()
    i = ad(CS: CS,eng: eng,prog: prog,Math: Math,ML: ML);
 
     print(i);
+    //print("${sum}");
  
   
 
